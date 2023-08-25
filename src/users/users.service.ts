@@ -19,7 +19,7 @@ export class UsersService {
     return await this.userRepository.save(userEntity);
   }
 
-  async fintById(id: number) {
+  async findById(id: number) {
     return await this.userRepository.findOne({
       where: {
         id,
