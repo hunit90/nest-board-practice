@@ -1,5 +1,6 @@
 import { IsEmail, IsString, Length } from 'class-validator';
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 export namespace AuthDto {
   export class SignUp {
     @IsEmail()
