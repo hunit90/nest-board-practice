@@ -5,6 +5,6 @@ import { PostsRepository } from './posts.repository';
 export class PostsService {
   constructor(private readonly repository: PostsRepository) {}
   async getPost(id: number): Promise<any> {
-    return this.repository.findOneBy(id);
+    return this.repository.findOneBy({ id });
   }
 }

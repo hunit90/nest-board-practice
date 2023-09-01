@@ -9,6 +9,6 @@ export class PostsRepository extends Repository<Post> {
   }
 
   async getPost(id: number) {
-    return await this.findOneBy({ id: id });
+    return await this.findOneBy({ id });
   }
 }
