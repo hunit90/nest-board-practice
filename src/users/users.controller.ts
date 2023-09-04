@@ -26,7 +26,7 @@ export class UsersController {
 
     const userEntity = await this.usersService.create(authDTO);
 
-    return '회원가입 성공';
+    return userEntity;
   }
 
   @UseGuards(AuthGuard('jwt'))
