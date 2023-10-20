@@ -7,4 +7,8 @@ export class PostsService {
   async getPost(id: number): Promise<any> {
     return this.repository.findOneBy({ id });
   }
+
+  async createPost() {
+    return this.repository.create();
+  }
 }
